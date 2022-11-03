@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF3-QU-nFN">
+                                <rect key="frame" x="32" y="776" width="350" height="54"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Br1-v7-6uC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqI-eB-i5M">
+                                <rect key="frame" x="172" y="670" width="71" height="83"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="axr-lD-nlX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="69"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="printer" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="64"/>
+                                </state>
+                                <connections>
+                                    <action selector="printerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWo-mJ-e0S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI sawitch Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8l-lW-uwN">
+                                <rect key="frame" x="11" y="299" width="392" height="37.5"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Viw-dK-fbI">
+                                <rect key="frame" x="82" y="471.5" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NtQ-23-Go6"/>
+                                    <constraint firstAttribute="height" constant="34" id="vgP-i0-uP9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cq-X7-mPb">
+                                <rect key="frame" x="184" y="416" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="fb1-N8-zcR"/>
+                                    <constraint firstAttribute="height" constant="31" id="r9A-9j-af0"/>
+                                </constraints>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4cq-X7-mPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4kA-Wb-uoG"/>
+                            <constraint firstItem="fF3-QU-nFN" firstAttribute="top" secondItem="mqI-eB-i5M" secondAttribute="bottom" constant="23" id="7h8-qy-ioB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mqI-eB-i5M" secondAttribute="trailing" constant="171" id="FxM-cP-5LE"/>
+                            <constraint firstItem="fF3-QU-nFN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Jtp-Kt-Fz6"/>
+                            <constraint firstItem="mqI-eB-i5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="NfZ-q0-YhT"/>
+                            <constraint firstItem="y8l-lW-uwN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="V2G-3w-exD"/>
+                            <constraint firstItem="mqI-eB-i5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="VaR-Wz-GC3"/>
+                            <constraint firstItem="Viw-dK-fbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xbe-5t-ZP3"/>
+                            <constraint firstItem="y8l-lW-uwN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="255" id="fEb-jK-ISZ"/>
+                            <constraint firstItem="4cq-X7-mPb" firstAttribute="top" secondItem="y8l-lW-uwN" secondAttribute="bottom" constant="96" id="fIa-3i-J8v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fF3-QU-nFN" secondAttribute="bottom" constant="32" id="foQ-xg-YiU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y8l-lW-uwN" secondAttribute="trailing" constant="11" id="r3U-zl-oeI"/>
+                            <constraint firstItem="4cq-X7-mPb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rmk-IQ-r8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fF3-QU-nFN" secondAttribute="trailing" constant="32" id="ufn-JC-YE3"/>
+                            <constraint firstItem="mqI-eB-i5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="vRp-aE-ZuO"/>
+                            <constraint firstItem="Viw-dK-fbI" firstAttribute="top" secondItem="4cq-X7-mPb" secondAttribute="bottom" constant="8" id="weA-oj-Z3v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstLable" destination="y8l-lW-uwN" id="RtN-8V-mAk"/>
+                        <outlet property="firstTxtfield" destination="Viw-dK-fbI" id="Jmb-de-rTf"/>
+                        <outlet property="loginButton" destination="fF3-QU-nFN" id="bq5-sO-HJD"/>
+                        <outlet property="printerButton" destination="mqI-eB-i5M" id="Eof-A7-joH"/>
+                        <outlet property="stateswitch" destination="4cq-X7-mPb" id="uSF-Df-KXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579.71014492753625" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="printer" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
